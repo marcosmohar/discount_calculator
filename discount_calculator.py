@@ -14,8 +14,8 @@ def calculate_discount(item_cost, relative_discount, total_discount):
 
 
 if __name__ == '__main__':
-	print calculate_discount(100.0, 10.0, 20.0)
-	print calculate_discount(500.0, 50.0, 50.0)
-	print calculate_discount(500.0, 80, 80)
-	print calculate_discount(100.0, 110, 50)
-	print calculate_discount(0, 50.0, 50.0)
+  item = float(raw_input("Enter item cost: "))
+  discount = float(raw_input("How much was the original discount: "))
+  total = float(raw_input("What was the extra discount for the item:"))
+
+  print "The price of your item after the discounts it ${}".format(calculate_discount(item, discount, total))
